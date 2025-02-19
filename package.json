@@ -1,0 +1,39 @@
+{
+  "name": "Wolfmare-pair",
+  "version": "1.0.1",
+  "type": "commonjs",
+  "description": "A multi-functional WhatsApp bot Pairing Web and QR Scanner.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20.0.0"
+    },
+  "scripts": {
+    "run": "pm2 start index.js --deep-monitoring --attach --name Wolfmare-pair",
+    "Wolfmare-pair": "pm2 start index.js --deep-monitoring --attach --name Wolfmare-pair",
+    "start": "pm2 start index.js --deep-monitoring --attach --name Wolfmare-pair",
+    "stop": "pm2 stop Wolfmare-pair",
+    "restart": "pm2 restart Wolfmare-pair",
+    "reload": "pm2 reload Wolfmare-pair",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "Prircode", "Login", "wolfmare","botpairing", "WhatsAppPairing", "LinkDevice"
+  ],
+  "author": "GlobalTechInfo",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "^6.7.12",
+    "dotenv": "^16.4.7",
+    "fs-extra": "^11.3.0",
+    "node-fetch": "^2.6.1",
+    "pastebin-api": "^7.0.0",
+    "pino": "^8.1.0",
+    "phone": "3.1.30",
+    "body-parser": "^1.20.1",
+    "path": "^0.12.7",
+    "express": "^4.18.1",
+    "pm2": "^5.4.2",
+    "qrcode": "^1.5.3"
+  }
+}
